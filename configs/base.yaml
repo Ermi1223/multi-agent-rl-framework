@@ -1,0 +1,28 @@
+# Base configuration for all experiments
+env_name: "cooperative"
+n_agents: 3
+continuous: false
+algorithm: "QMIX"
+total_episodes: 3000
+max_steps: 100
+batch_size: 1024
+buffer_size: 100000
+gamma: 0.99
+tau: 0.01
+learning_rate: 0.0005
+actor_lr: 0.001
+critic_lr: 0.001
+epsilon_start: 1.0
+epsilon_min: 0.01
+epsilon_decay: 0.995
+use_communication: true
+comm_dim: 8
+use_specialization: true
+failure_simulation: true
+failure_prob: 0.05
+failure_type: "disconnect"
+state_dim: 48  # Override in specific configs
+hidden_dim: 64
+save_interval: 100
+log_dir: "results/logs"
+checkpoint_dir: "results/checkpoints"
