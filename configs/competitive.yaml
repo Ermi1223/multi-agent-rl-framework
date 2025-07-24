@@ -1,0 +1,9 @@
+# Competitive environment configuration
+extends: "base.yaml"
+env_name: "competitive"
+n_agents: 4  # 3 predators, 1 prey
+algorithm: "MADDPG"
+use_communication: false
+state_dim: 60  # Simple tag environment
+log_dir: "results/logs/competitive"
+checkpoint_dir: "results/checkpoints/competitive"
