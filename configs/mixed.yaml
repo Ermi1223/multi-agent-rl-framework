@@ -1,0 +1,8 @@
+# Mixed environment configuration
+extends: "base.yaml"
+env_name: "mixed"
+n_agents: 4  # 3 cooperative, 1 adversary
+algorithm: "MADDPG"
+state_dim: 64  # Simple adversary environment
+log_dir: "results/logs/mixed"
+checkpoint_dir: "results/checkpoints/mixed"
