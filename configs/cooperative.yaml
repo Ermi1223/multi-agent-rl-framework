@@ -1,0 +1,8 @@
+# Cooperative environment configuration
+extends: "base.yaml"
+env_name: "cooperative"
+n_agents: 3
+algorithm: "QMIX"
+state_dim: 48  # Simple spread environment
+log_dir: "results/logs/cooperative"
+checkpoint_dir: "results/checkpoints/cooperative"
